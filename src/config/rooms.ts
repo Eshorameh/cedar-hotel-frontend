@@ -69,8 +69,9 @@ export const rooms: Room[] = [
     description:
       "Our Premium Suite offers generous living space, refined interiors and enhanced amenities for guests who want a little more from their stay.",
     images: [
-      "/images/9.jpg",
-      "/images/11.jpg",
+      "/images/45.png",
+      "/images/48.png",
+      "/images/44.png",
     ],
     roomSize: 65,
     maxGuests: 4,

@@ -18,7 +18,7 @@ export const facilities: Facility[] = [
   },
   {
     id: "pool-game",
-    name: "Pool Game",
+    name: "Sport Games",
     category: "RECREATION",
     description:
       "Enjoy a friendly game of pool in a relaxed and welcoming setting.",
@@ -27,10 +27,10 @@ export const facilities: Facility[] = [
   },
   {
     id: "children-playground",
-    name: "Children's Play Area",
-    category: "FAMILY",
+    name: "Hit The Gym",
+    category: "Sport",
     description:
-      "A fun space where younger guests can play, explore and make memories.",
+      "A Healthy Body Equals a Healthy Mind..",
     image:
       "/images/19.jpg",
   },
@@ -50,7 +50,7 @@ export const facilities: Facility[] = [
     description:
       "Get active and enjoy a game on our basketball court.",
     image:
-      "/images/1.jpg",
+      "/images/17.jpg",
   },
   {
     id: "football",
@@ -59,6 +59,6 @@ export const facilities: Facility[] = [
     description:
       "Bring your game and enjoy outdoor football with friends and family.",
     image:
-      "/images/13.jpg",
+      "/images/26.jpg",
   },
 ];

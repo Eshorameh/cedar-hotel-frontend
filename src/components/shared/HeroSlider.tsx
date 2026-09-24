@@ -5,6 +5,20 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
+    image: "/images/22.jpg",
+    eyebrow: "WELCOME TO CEDAR HOTEL",
+    title: "Experience Refined Hospitality",
+    description:
+      "Discover a serene stay where modern comfort meets warm, thoughtful hospitality.",
+  },
+  {
+    image: "/images/45.png",
+    eyebrow: "WELCOME TO CEDAR HOTEL",
+    title: "Experience Refined Hospitality",
+    description:
+      "Discover a serene stay where modern comfort meets warm, thoughtful hospitality.",
+  },
+  {
     image: "/images/1.jpg",
     eyebrow: "WELCOME TO CEDAR HOTEL",
     title: "Experience Refined Hospitality",
