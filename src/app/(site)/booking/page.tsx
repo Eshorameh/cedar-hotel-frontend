@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import Link from "next/link";
 import {
   BedDouble,
@@ -15,6 +16,14 @@ import { rooms } from "@/config/rooms";
 import BookingBar from "./BookingBar";
 
 export default function BookingPage() {
+  return (
+    <Suspense fallback={<BookingLoading />}>
+      <BookingContent />
+    </Suspense>
+  );
+}
+
+function BookingContent() {
   const searchParams = useSearchParams();
 
   const checkIn = searchParams.get("checkIn");
@@ -329,5 +338,22 @@ function RoomResultCard({
       </div>
 
     </article>
+    
+  );
+  
+}
+function BookingLoading() {
+  return (
+    <main className="min-h-screen bg-[#f8f5ef] px-6 py-32">
+      <div className="mx-auto max-w-xl text-center">
+        <p className="text-xs font-semibold tracking-[0.3em] text-[#c9a45c]">
+          CEDAR HOTEL
+        </p>
+
+        <h1 className="font-display mt-4 text-4xl text-[#173f35]">
+          Loading booking...
+        </h1>
+      </div>
+    </main>
   );
 }
