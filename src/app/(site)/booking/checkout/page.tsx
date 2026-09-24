@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ArrowLeft, ShieldCheck } from "lucide-react";
@@ -21,6 +22,14 @@ const guestSchema = z.object({
 type GuestFormData = z.infer<typeof guestSchema>;
 
 export default function CheckoutPage() {
+  return (
+    <Suspense fallback={<CheckoutLoading />}>
+      <CheckoutContent />
+    </Suspense>
+  );
+}
+
+function CheckoutContent() {
   const searchParams = useSearchParams();
 
   const roomSlug = searchParams.get("room");
@@ -400,5 +409,21 @@ function Summary({
         {value}
       </span>
     </div>
+  );
+}
+
+function CheckoutLoading() {
+  return (
+    <main className="min-h-screen bg-[#f8f5ef] px-6 py-32">
+      <div className="mx-auto max-w-xl text-center">
+        <p className="text-xs font-semibold tracking-[0.3em] text-[#c9a45c]">
+          CEDAR HOTEL
+        </p>
+
+        <h1 className="font-display mt-4 text-4xl text-[#173f35]">
+          Loading your reservation...
+        </h1>
+      </div>
+    </main>
   );
 }
