@@ -10,9 +10,9 @@ export const rooms: Room[] = [
     description:
       "Our Deluxe Room combines contemporary design, thoughtful amenities and a peaceful atmosphere to give you a comfortable and memorable stay.",
     images: [
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1600&q=90",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=90",
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1600&q=90",
+      "/images/2.jpg",
+      "/images/4.jpg",
+      "/images/5.jpg",
     ],
     roomSize: 32,
     maxGuests: 2,
@@ -40,8 +40,8 @@ export const rooms: Room[] = [
     description:
       "Designed for business and leisure travellers, the Executive Room provides an elegant environment with everything you need for a productive and relaxing stay.",
     images: [
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=90",
-      "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=1600&q=90",
+      "/images/11.jpg",
+      "/images/12.jpg",
     ],
     roomSize: 40,
     maxGuests: 2,
@@ -69,8 +69,8 @@ export const rooms: Room[] = [
     description:
       "Our Premium Suite offers generous living space, refined interiors and enhanced amenities for guests who want a little more from their stay.",
     images: [
-      "https://images.unsplash.com/photo-1590490359683-658d3d23f972?auto=format&fit=crop&w=1600&q=90",
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=90",
+      "/images/9.jpg",
+      "/images/11.jpg",
     ],
     roomSize: 65,
     maxGuests: 4,

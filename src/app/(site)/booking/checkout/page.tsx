@@ -41,6 +41,9 @@ export default function CheckoutPage() {
     resolver: zodResolver(guestSchema),
   });
 
+  /*
+   * Validate booking information before continuing.
+   */
   if (!room || !checkIn || !checkOut) {
     return (
       <main className="min-h-screen bg-[#f8f5ef] px-6 py-32">
@@ -69,16 +72,26 @@ export default function CheckoutPage() {
     );
   }
 
+  /*
+   * From this point onward TypeScript knows that these values exist.
+   * We capture them as validated constants so nested functions such as
+   * onSubmit can safely use them.
+   */
+  const selectedRoom = room;
+  const selectedCheckIn = checkIn;
+  const selectedCheckOut = checkOut;
+
   const nights = Math.max(
     1,
     Math.ceil(
-      (parseISO(checkOut).getTime() -
-        parseISO(checkIn).getTime()) /
+      (parseISO(selectedCheckOut).getTime() -
+        parseISO(selectedCheckIn).getTime()) /
         (1000 * 60 * 60 * 24)
     )
   );
 
-  const roomSubtotal = room.pricePerNight * nights * roomCount;
+  const roomSubtotal =
+    selectedRoom.pricePerNight * nights * roomCount;
 
   const serviceFee = Math.round(roomSubtotal * 0.05);
 
@@ -87,9 +100,9 @@ export default function CheckoutPage() {
   function onSubmit(data: GuestFormData) {
     console.log({
       guest: data,
-      room: room.slug,
-      checkIn,
-      checkOut,
+      room: selectedRoom.slug,
+      checkIn: selectedCheckIn,
+      checkOut: selectedCheckOut,
       adults,
       children,
       roomCount,
@@ -241,8 +254,8 @@ export default function CheckoutPage() {
           <aside className="h-fit overflow-hidden rounded-2xl bg-white shadow-sm">
 
             <img
-              src={room.images[0]}
-              alt={room.name}
+              src={selectedRoom.images[0]}
+              alt={selectedRoom.name}
               className="h-64 w-full object-cover"
             />
 
@@ -253,19 +266,25 @@ export default function CheckoutPage() {
               </p>
 
               <h2 className="font-display mt-3 text-3xl text-[#173f35]">
-                {room.name}
+                {selectedRoom.name}
               </h2>
 
               <div className="mt-7 space-y-4">
 
                 <Summary
                   label="Check In"
-                  value={format(parseISO(checkIn), "dd MMM yyyy")}
+                  value={format(
+                    parseISO(selectedCheckIn),
+                    "dd MMM yyyy"
+                  )}
                 />
 
                 <Summary
                   label="Check Out"
-                  value={format(parseISO(checkOut), "dd MMM yyyy")}
+                  value={format(
+                    parseISO(selectedCheckOut),
+                    "dd MMM yyyy"
+                  )}
                 />
 
                 <Summary

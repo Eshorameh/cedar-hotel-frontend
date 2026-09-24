@@ -5,32 +5,35 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2200&q=90",
+    image: "/images/1.jpg",
     eyebrow: "WELCOME TO CEDAR HOTEL",
     title: "Experience Refined Hospitality",
     description:
       "Discover a serene stay where modern comfort meets warm, thoughtful hospitality.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=90",
+    image: "/images/13.jpg",
     eyebrow: "YOUR PRIVATE RETREAT",
     title: "Comfort Designed Around You",
     description:
       "Relax in beautifully appointed spaces created for rest, privacy and effortless comfort.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=2200&q=90",
+    image: "/images/15.jpg",
     eyebrow: "EXCEPTIONAL FACILITIES",
     title: "Everything You Need",
     description:
       "Enjoy thoughtfully curated facilities designed to make every moment of your stay memorable.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=2200&q=90",
+    image: "/images/17.jpg",
+    eyebrow: "A WARM WELCOME",
+    title: "Stay. Relax. Experience Cedar.",
+    description:
+      "From arrival to departure, experience hospitality that feels personal.",
+  },
+  {
+    image: "/images/16.jpg",
     eyebrow: "A WARM WELCOME",
     title: "Stay. Relax. Experience Cedar.",
     description:
