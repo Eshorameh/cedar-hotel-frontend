@@ -1,6 +1,39 @@
 import { Room } from "@/types/room";
 
 export const rooms: Room[] = [
+  
+    {
+    id: "room-003",
+    name: "Premium Suite",
+    slug: "premium-suite",
+    shortDescription:
+      "A spacious suite created for guests seeking an elevated experience.",
+    description:
+      "Our Premium Suite offers generous living space, refined interiors and enhanced amenities for guests who want a little more from their stay.",
+    images: [
+      "/images/45.png",
+      "/images/48.png",
+      "/images/44.png",
+    ],
+    roomSize: 65,
+    maxGuests: 4,
+    bedType: "King Bed",
+    pricePerNight: 300000,
+    currency: "NGN",
+    amenities: [
+      { name: "Free Wi-Fi" },
+      { name: "Air Conditioning" },
+      { name: "Smart TV" },
+      { name: "Mini Bar" },
+      { name: "Living Area" },
+      { name: "Room Service" },
+      { name: "Work Desk" },
+      { name: "Premium Bathroom" },
+    ],
+    featured: true,
+    available: true,
+  },
+
   {
     id: "room-001",
     name: "Deluxe Room",
@@ -60,35 +93,5 @@ export const rooms: Room[] = [
     available: true,
   },
 
-  {
-    id: "room-003",
-    name: "Premium Suite",
-    slug: "premium-suite",
-    shortDescription:
-      "A spacious suite created for guests seeking an elevated experience.",
-    description:
-      "Our Premium Suite offers generous living space, refined interiors and enhanced amenities for guests who want a little more from their stay.",
-    images: [
-      "/images/45.png",
-      "/images/48.png",
-      "/images/44.png",
-    ],
-    roomSize: 65,
-    maxGuests: 4,
-    bedType: "King Bed",
-    pricePerNight: 300000,
-    currency: "NGN",
-    amenities: [
-      { name: "Free Wi-Fi" },
-      { name: "Air Conditioning" },
-      { name: "Smart TV" },
-      { name: "Mini Bar" },
-      { name: "Living Area" },
-      { name: "Room Service" },
-      { name: "Work Desk" },
-      { name: "Premium Bathroom" },
-    ],
-    featured: true,
-    available: true,
-  },
+
 ];

@@ -16,7 +16,7 @@ const facilities = [
       "Take a refreshing break and enjoy a peaceful moment by the pool.",
     icon: Waves,
     image:
-      "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=85",
+      "/images/16.jpg",
   },
   {
     title: "Fully Equipped Gym",
@@ -24,7 +24,7 @@ const facilities = [
       "Stay active with modern fitness equipment and a comfortable workout environment.",
     icon: Dumbbell,
     image:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=85",
+      "/images/1.jpg",
   },
   {
     title: "Restaurant & Dining",
@@ -32,7 +32,7 @@ const facilities = [
       "Enjoy delicious meals and a welcoming dining experience throughout your stay.",
     icon: Utensils,
     image:
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85",
+      "/images/31.jpg",
   },
   {
     title: "High-Speed Internet",
@@ -48,7 +48,7 @@ const facilities = [
       "A welcoming space where younger guests can play, explore and have fun.",
     icon: Baby,
     image:
-      "https://images.unsplash.com/photo-1567057419565-4349c49d8a04?auto=format&fit=crop&w=1200&q=85",
+      "images/50.jpg",
   },
   {
     title: "Serene Green Spaces",
@@ -56,7 +56,7 @@ const facilities = [
       "Relax and unwind in peaceful outdoor spaces surrounded by greenery.",
     icon: Trees,
     image:
-      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=85",
+      "images/28.jpg",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function FacilitiesPage() {
         eyebrow="OUR FACILITIES"
         title="Everything you need for an exceptional stay."
         description="From relaxation and fitness to dining and family experiences, discover the facilities designed to make your Cedar stay complete."
-        image="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=2200&q=90"
+        image="/images/24.jpg"
       />
 
       {/* Introduction */}

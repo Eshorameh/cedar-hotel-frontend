@@ -5,32 +5,32 @@ const galleryImages = [
   {
     category: "Hotel",
     image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
+      "/images/47.png",
   },
   {
     category: "Rooms",
     image:
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85",
+      "/images/46.png",
   },
   {
     category: "Pool",
     image:
-      "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=85",
+      "/images/44.png",
   },
   {
     category: "Rooms",
     image:
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85",
+      "/images/45.png",
   },
   {
     category: "Hotel",
     image:
-      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85",
+      "/images/50.jpg",
   },
   {
     category: "Facilities",
     image:
-      "https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=1200&q=85",
+      "/images/24.jpg",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function GalleryPage() {
         eyebrow="CEDAR GALLERY"
         title="Take a glimpse into the Cedar experience."
         description="Explore the spaces, rooms and experiences that make Cedar Hotel special."
-        image="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=2200&q=90"
+        image="/images/47.png"
       />
 
       <section className="px-6 py-24 lg:px-8">

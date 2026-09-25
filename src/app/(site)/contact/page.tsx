@@ -11,7 +11,7 @@ export default function ContactPage() {
         eyebrow="GET IN TOUCH"
         title="We're here to make your stay effortless."
         description="Have a question, need assistance or planning your next stay? We'd love to hear from you."
-        image="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2200&q=90"
+        image="/images/48.png"
       />
 
       <section className="px-6 py-24 lg:px-8">

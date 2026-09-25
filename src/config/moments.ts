@@ -41,7 +41,7 @@ export const moments: Moment[] = [
     description:
       "Discover calm surroundings, beautiful green spaces and room to simply slow down.",
     image:
-      "/images/26.jpg",
+      "/images/49.png",
   },
   {
     id: "pool",

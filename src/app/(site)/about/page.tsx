@@ -10,7 +10,7 @@ export default function AboutPage() {
         eyebrow="ABOUT CEDAR HOTEL"
         title="More Than a Stay. An Experience."
         description="Discover the story, philosophy and hospitality behind Cedar Hotel."
-        image="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=2200&q=90"
+        image="/images/45.png"
       />
 
       {/* Introduction */}
