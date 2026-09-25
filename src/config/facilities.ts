@@ -52,13 +52,4 @@ export const facilities: Facility[] = [
     image:
       "/images/17.jpg",
   },
-  {
-    id: "football",
-    name: "Football",
-    category: "SPORTS",
-    description:
-      "Bring your game and enjoy outdoor football with friends and family.",
-    image:
-      "/images/26.jpg",
-  },
 ];
