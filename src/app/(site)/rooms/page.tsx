@@ -16,7 +16,7 @@ export default function RoomsPage() {
         eyebrow="OUR ROOMS"
         title="Comfort designed around you."
         description="Discover thoughtfully designed rooms and suites created for rest, privacy and an exceptional stay."
-        image="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=2200&q=90"
+        image="/images/45.png"
       />
 
 
