@@ -43,9 +43,9 @@ export const rooms: Room[] = [
     description:
       "Our Deluxe Room combines contemporary design, thoughtful amenities and a peaceful atmosphere to give you a comfortable and memorable stay.",
     images: [
-      "/images/2.jpg",
-      "/images/4.jpg",
-      "/images/5.jpg",
+      "/images/56.jpg",
+      "/images/41.jpg",
+      "/images/46.png",
     ],
     roomSize: 32,
     maxGuests: 2,
@@ -73,6 +73,7 @@ export const rooms: Room[] = [
     description:
       "Designed for business and leisure travellers, the Executive Room provides an elegant environment with everything you need for a productive and relaxing stay.",
     images: [
+      "/images/5.jpg",
       "/images/11.jpg",
       "/images/12.jpg",
     ],

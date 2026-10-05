@@ -24,7 +24,7 @@ export default function MomentsSlider() {
 
   return (
     <div className="mt-12">
-      <div className="relative h-[600px] overflow-hidden rounded-3xl">
+      <div className="relative h-[600px] overflow-hidden ">
         {/* Image */}
         <img
           key={moment.id}

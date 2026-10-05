@@ -24,7 +24,7 @@ export default function FacilitiesSlider() {
 
   return (
     <div className="mt-12">
-      <div className="relative h-[560px] overflow-hidden rounded-3xl">
+      <div className="relative h-[560px] overflow-hidden ">
         {/* Facility Image */}
         <img
           key={facility.id}

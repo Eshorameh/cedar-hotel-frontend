@@ -53,7 +53,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-[#173f35]">Call Us</h3>
                   <p className="mt-1 text-sm text-[#6b746f]">
-                    +234 XXX XXX XXXX
+                    +234 805 7012 047
                   </p>
                 </div>
               </div>
